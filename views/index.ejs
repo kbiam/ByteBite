@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/registration.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration</h1>
+      <!-- <p>Please enter your ID and password</p> -->
+      <form action="/userRegistration" method="post">
+        <input type="text" name="Username" placeholder="Username" class="no-spinner">
+        <input type="text" name="Email" placeholder="Email">
+        <input type="password" name="Password" placeholder="Password" id="pass"><br>
+        <% if (error) { %>
+          <p id="ERROR"><%= error %></p>
+      <% } else {%>
+        <p></p>
+        <% } %>
+        <button type="submit" id="btn">Sign Up</button>
+        <p>Already have an Account? <span><a href="/userLogin">Sign In</a></span></p>
+
+      </form>
+    </div>
+
+  </body>
+</html>
