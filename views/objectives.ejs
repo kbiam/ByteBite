@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/objectives.css">
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>What you'd like to start with?</h1>
+            <p>ByteBite empowers educational objectives. Please choose a course you are excited about.</p>
+        </div>
+        <div class="options">
+            <% courses.forEach(function(course){ %>
+                <button><%= course.courseName %></button>
+                <% }); %>
+            <!-- <button>React</button>
+            <button>Core JAVA</button> -->
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>
