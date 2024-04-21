@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 * {
     margin: 0;
-    padding: 7px 15px;
+    padding: 6px 15px;
     box-sizing: border-box;
     font-family: "Rubik";
 }
 .navbar{
     /* background-color: rgb(191, 191, 191); */
     display: flex;
+    justify-content: space-between;
     gap: 20px;
     color: #303030;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     
 }
 h1{
@@ -19,6 +20,34 @@ h1{
 .navLinks{
 
     font-size: 25px;
+
+}
+.navl1{
+    display: flex;
+    /* background-color: #303030; */
+    padding: 0px;
+
+}
+.navl2{
+    display: flex;
+    padding: 0px;
+    color: red;
+}
+.navl2 p{
+    color: red;
+}
+#logout{
+    /* color: red; */
+}
+.navlinks:hover{
+}
+.navbar p{
+    font-size: 23px;
+    color: #838383;
+}
+.navbar p:hover{
+    color: #303030;
+
 }
 .navbar img{
     position: absolute;
