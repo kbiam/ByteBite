@@ -19,6 +19,7 @@ app.use(session({
   saveUninitialized:false,
   secret:"hehe"
 }));
+app.use(express.static('public'));
 
 app.use(logger('dev'));
 app.use(express.json());

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/content.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <!-- <img src="images/3574480-200.png" alt=""> -->
+        <p class="navLinks">Home</p>
+        <p class="navLinks">Friends</p>
+    </div>
+    <% enrolledCourses.forEach(function(course){ %>
+        <div class="course">
+            <h1>Getting started with <%= course.courseName %></h1>
+            <p>Short lessons to learn the basics of using <%= course.courseName %>.</p>
+            <div class="lessonbox">
+                <% for (const lesson of course.lessons) { %>
+                <div class="lesson" data-lesson-name = "<%=lesson.lessonName %>">
+                    <img src="<%= lesson.thumbnail %>" alt="Lesson Thumbnail">
+                    <p><%= lesson.lessonName %></p>
+
+                </div>
+
+                <% } %>
+
+            </div>
+
+        </div>
+        <% }) %>
+    <!-- <div class="course">
+        <h1>Getting started with React</h1>
+        <p>Short lessons to learn the basics of using React.</p>
+        <div class="lessonbox">
+            <div class="lesson">
+                
+            </div>
+            <div class="lesson">
+
+            </div>
+        </div>
+        
+    </div>
+    <div class="course">
+        <h1>Getting started with CORE Java</h1>
+    </div> -->
+
+
+<script src="javascripts/content.js"></script>
+</body>
+</html>

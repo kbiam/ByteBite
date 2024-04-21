@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson</title>
+    <link rel="stylesheet" href="/stylesheets/lesson.css">
+</head>
+<body>
+    <h1><%= lessonName  %></h1>
+    <h1 id="X">X</h1>
+    <div class="slider">
+        <% videos.forEach(function (video) { %>
+        <div class="item">
+            <!-- <h1>Slide 1</h1> -->
+            <video src="<%= video.url %>" controls  type="video/mp4"></video>
+        </div>
+        <% }) %>
+        <div class="item" id="quizitem">
+            <!-- <img src="images/OIP.jpeg.jpg" alt=""> -->
+            <button id="quizbtn">Take an AI powered quiz 🚀</button>
+        </div>
+
+        <button id="next">></button>
+        <button id="prev"><</button>
+    </div>
+
+
+
+    
+    <script src="/javascripts/lesson.js"></script>
+</body>
+</html>

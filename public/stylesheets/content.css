@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+* {
+    margin: 0;
+    padding: 7px 15px;
+    box-sizing: border-box;
+    font-family: "Rubik";
+}
+.navbar{
+    /* background-color: rgb(191, 191, 191); */
+    display: flex;
+    gap: 20px;
+    color: #303030;
+    margin-bottom: 40px;
+    
+}
+h1{
+    font-weight: 500;
+}
+.navLinks{
+
+    font-size: 25px;
+}
+.navbar img{
+    position: absolute;
+    width: 5%;
+    left: 20px;
+    top: 16px;
+}
+.lessonbox{
+    margin-top: 10px;
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: aqua; */
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.lesson{
+    width: 22%;
+    height: 180px;
+    border-radius: 15px;
+    background-color: #303030;
+    overflow: hidden;
+    transition: 0.4s;
+
+}
+.lesson:hover{
+    transform: translateY(-5px);
+
+}
+.lesson p{
+    color: black;
+    z-index: 9999;
+    transform: translateY(40px);
+}
+.course{
+    margin-bottom: 15px;
+}
+.lesson img{
+    transform: translate(-29px,-14px);
+    
+    width: 340px;
+    height: 195px;
+}

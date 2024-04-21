@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/userLogin.css' />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <!-- <p>Please enter your ID and password</p> -->
+      <form action="/login" method="post">
+        <input type="text" name="Username" placeholder="Username" class="no-spinner">
+        <!-- <input type="text" name="Email" placeholder="Email"> -->
+        <input type="password" name="Password" placeholder="Password" id="pass"><br>
+        <% if (error) { %>
+          <p id="ERROR"><%= error %></p>
+      <% } else {%>
+        <p></p>
+        <% } %>
+        <button type="submit" id="btn">Sign In</button>
+        <p>Dont have an Account? <span><a href="/registration">Sign Up</a></span></p>
+
+      </form>
+  </body>
+
+</html>

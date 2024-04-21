@@ -48,3 +48,24 @@
     transform: translateY(-5px);
     background-color: var(--btn-hover-color);
   }
+  #continue{
+    font-size: 15px;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px 40px;
+    border: 1px solid rgb(183, 183, 183);
+    background-color: transparent;
+    transition: 0.4s;
+    margin-bottom: 10px;
+    margin-top: 300px;
+    position: absolute;
+    left: 8%;
+ }
+  #continue:hover{
+    background-color: rgb(219, 219, 219);
+  }
+
+  .course.selected{
+    outline: auto;
+    border: 1px solid rgb(50, 50, 50);
+  }

@@ -6,14 +6,17 @@ const lessonSchema = new mongoose.Schema({
         type : String,
         unique: true
     },
-    parentCourseId:{
+    courseName:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'Course'
     },
     videos:[{
         type:mongoose.Schema.Types.ObjectId,
         ref:'Videos'
-    }]
+    }],
+    thumbnail:{
+        type:String
+    }
 })
 
 module.exports = mongoose.model('Lessons', lessonSchema);
